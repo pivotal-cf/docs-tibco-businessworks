@@ -7,17 +7,18 @@ This topic describes how to install, configure, and upgrade the TIBCO BusinessWo
 
 ##<a id='install'></a> Install and Configure the TIBCO BusinessWorks Container Edition Buildpack 
 
-1. Download the product file from Pivotal Network.
+1. Download the product file from [Pivotal Network](https://network.pivotal.io).
 
-1. Upload the product file on the Ops Manager Installation Dashboard.
+1. Navigate to Ops Manager and click **Import a Product** to upload the product file on the Ops Manager Installation Dashboard.
 
-1. Click **Add** next to the uploaded TIBCO BusinessWorks Container Edition Buildpack tile in the Ops Manager **Available Products** view to add it to your staging area.
+1. Click **Add** next to the uploaded **TIBCO BusinessWorks Container Edition Buildpack for PCF** tile in the Ops Manager **Available Products** view to add it to your staging area.
 
-1. Click the newly added **TIBCO BusinessWorks Container Edition Buildpack** tile.
+1. Click the newly added **TIBCO BusinessWorks Container Edition Buildpack for PCF** tile to configure it.
 
-1. Specify values for the configuration options. (**Which options?**)
+1. Click **Buildpack Settings** and enter the position for the buildpack installed by the tile. This sets the order of the buildpack relative to the other buildpacks in the detection priority list. For more information, see the [Buildpack Detection](../pivotalcf/buildpacks/detection.html) topic. 
+    <%= image_tag('buildpack_settings.png') %>
 
-1. Click the **Stemcell** tab. Download the correct stemcell from Pivotal Network and click **Import Stemcell** to import it.
+1. Click **Stemcell**. Download the BOSH stemcell versopm 3146 Ubuntu Trusty stemcell appropriate for your IaaS from [Pivotal Network](https://network.pivotal.io/products/stemcells) and click **Import Stemcell** to import it.
 
 1. Click **Save**.
 
@@ -25,13 +26,15 @@ This topic describes how to install, configure, and upgrade the TIBCO BusinessWo
 
 ##<a id='upgrade'></a> Upgrade the TIBCO BusinessWorks Container Edition Buildpack
 
-1. Download the latest version of the product from Pivotal Network.
+1. Download the latest version of the product from [Pivotal Network](https://network.pivotal.io).
 
-1. Upload the new product file to Ops Manager.
+1. Navigate to Ops Manager and click **Import a Product** to upload the product file on the Ops Manager Installation Dashboard.
 
-1. Upload the stemcell associated with the update, if required.
+1. Click **Add** next to the uploaded **TIBCO BusinessWorks Container Edition Buildpack for PCF** tile in the Ops Manager **Available Products** view to add it to your staging area.
 
-1. Update any new mandatory configuration parameters, if required.
+1. Click the newly added **TIBCO BusinessWorks Container Edition Buildpack for PCF** tile to configure it.
+
+1. Follow the configuration steps in the [section](#install) above. Download and import the new stemcell associated with the update, if required.
 
 1. Click **Save**.
 
