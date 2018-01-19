@@ -1,0 +1,83 @@
+---
+title: TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry
+owner: Partners
+---
+
+This documentation describes the TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry (PCF). The TIBCO BusinessWorks Container Edition Buildpack provides the runtime component for developers to deploy BusinessWorks (BW) applications to Pivotal Application Service (formerly Elastic Runtime). 
+
+## <a id='overview'></a>Overview
+
+TIBCO BusinessWorks Container Edition enables you to quickly and easily connect APIs, Microservices and legacy backend systems. With an easy-to-use drag-and-drop graphical development environment, graphical data mapper and vast library of connectors, you can quickly and easily create cloud-native integration applications and run them on natively on Pivotal Application Service (formerly Elastic Runtime).
+
+When a developer pushes a BW application to a PCF deployment, the TIBCO BusinessWorks Container Edition Buildpack detects the BW application, produces a tarball called a "droplet" that contains a lightweight version of the BW runtime along with the application files, and configures the runtime to run the application when the container starts. For more information about how PCF stages applications, see the [How Applications Are Staged](http://docs.pivotal.io/pivotalcf/concepts/how-applications-are-staged.html#stage-buildpack) topic. 
+
+To build applications for the runtime provided by the TIBCO BusinessWorks Container Edition Buildpack, developers must use the TIBCO Business Studio Container Edition development environment. See the [Requirements](#reqs) section below for more information.
+
+The TIBCO BusinessWorks Container Edition runtime simplifies creation of cloud-native integration applications using any of the following integration styles:
+
+* **Batch-oriented**: provides non real-time integration for endpoints such as databases or files, and uses records for data abstraction
+* **Process-oriented**: provides real-time integration for endpoints such as application APIs and adapters, and uses APIs, objects, and messages for data abstraction
+* **Service-oriented**: provides real-time integration for endpoints such as web services and APIs, and uses services and messages for data abstraction
+* **Resource-oriented**: provides real-time integration for endpoints such as mobile or web applications and APIs, and uses resources for data abstraction
+
+TIBCO BusinessWorks Container Edition runtime natively integrates with Spring Cloud Services for PCF to support Service Registry/Discovery, Configuration Management and Circuit Breaker pattern.
+
+For more information about the TIBCO BusinessWorks Container Edition runtime, see the TIBCO [documentation](https://docs.tibco.com/products/tibco-businessworks-container-edition). For specific topics in the TIBCO documentation, refer to the following sections:
+
+* [Product Readme](https://docs.tibco.com/pub/bwce/2.3.2/TIB_bwce_2.3.2_readme.txt)
+* [Concepts](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-19EB8B0F-E5CA-404F-9CC4-679C6BC80C69.html)
+* [Installation](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-AE224C18-28F9-423E-86A8-9ECFD5CB07AD.html)
+* [Application Development](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-CD0E9EFE-57EA-4CFB-B5C0-D238BD7C2582.html)
+* [Getting Started](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-58F956CA-78B8-4456-88D7-E4388701A574.html)
+* [Error Codes](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-BCE139FD-9FE8-40F3-ABD5-A61F49FFEFB9.html)
+* [Bindings and Palettes Reference](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-30E54743-B8C5-49DF-A9C3-D83C849A80E7.html)
+* [Conversion](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-97B0D6D0-53EC-443F-870F-43A17656C426.html)
+* [Samples](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-93DD015C-A9F7-41E8-B0D4-C0D79005283D.html)
+* [REST Implementation](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-7A1304EB-E40D-46C0-8EFF-35128D0AFF2B.html)
+* [Migration (from TIBCO ActiveMatrix BusinessWorks 5.x)](https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-44A8FCD8-AACA-4D01-B074-4FE2C4D3B185.html)
+* [Application Monitoring and Troubleshooting] (https://docs.tibco.com/pub/bwce/2.3.2/doc/html/GUID-96F1B4D9-4363-4584-B440-0ED40F95B252.html)
+
+## <a id="snapshot"></a>Product Snapshot
+
+The following table provides version and version-support information about TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry:
+
+<table class="nice">
+    <th>Element</th>
+    <th>Details</th>
+    <tr>
+        <td>Version</td>
+        <td>2.3.2</td>
+    </tr>
+    <tr>
+        <td>Release date</td>
+        <td>January 2018</td>
+    </tr>
+    <tr>
+        <td>Software component version</td>
+        <td>TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry 2.3.2</td>
+    </tr>
+    <tr>
+        <td>Compatible Ops Manager version(s)</td>
+        <td>v1.10.x, v1.11.x, v1.12.x</td>
+    </tr>
+    <tr>
+        <td>Compatible Elastic Runtime version(s)</td>
+        <td>v1.10.x, v1.11.x, v1.12.x</td>
+    </tr>
+    <tr>
+        <td>IaaS support</td>
+        <td>AWS, Azure, OpenStack, and vSphere</td>
+    </tr>
+</table>
+
+## <a id="reqs"></a>Requirements
+
+To use the runtime provided by the TIBCO BusinessWorks Container Edition Buildpack, developers must [download](https://www.tibco.com/products/tibco-businessworks) and install the TIBCO Business Studio Container Edition development environment.   
+
+## <a id="relnotes"></a>Release Notes
+
+For the release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.3.2/doc/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
+
+## <a id="feedback"></a>Feedback
+
+Please provide any bugs, feature requests, or questions to the [Pivotal Cloud Foundry Feedback](mailto:pivotal-cf-feedback@pivotal.io) list.
