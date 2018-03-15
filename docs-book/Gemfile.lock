@@ -15,7 +15,7 @@ GEM
       css_parser
       elasticsearch
       fog-aws (~> 0.7.1)
-      font-awesome-sass
+      font-awesome-sass (= 4.7.0)
       git (~> 1.2.8)
       middleman (= 4.1.10)
       middleman-compass
@@ -165,13 +165,14 @@ GEM
     padrino-support (0.13.3.4)
       activesupport (>= 3.1)
     parallel (1.12.1)
+    public_suffix (3.0.2)
     public_suffix (3.0.1)
     puma (3.11.2)
     rack (1.6.8)
     rack-livereload (0.3.16)
       rack
     rack-rewrite (1.5.1)
-    rb-fsevent (0.10.2)
+    rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redcarpet (3.2.3)
