@@ -166,7 +166,6 @@ GEM
       activesupport (>= 3.1)
     parallel (1.12.1)
     public_suffix (3.0.2)
-    public_suffix (3.0.1)
     puma (3.11.2)
     rack (1.6.8)
     rack-livereload (0.3.16)
