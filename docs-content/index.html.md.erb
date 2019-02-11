@@ -3,6 +3,11 @@ title: TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry
 owner: Partners
 ---
 
+<p class="note warning"><strong> WARNING:</strong>
+This tile requires a Trusty stemcell.
+The end of life date for Ubuntu Trusty is April 2019.
+If a security vulnerability is found on this stemcell after April, it will not be fixed.</p>
+
 This documentation describes the TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry (PCF). The TIBCO BusinessWorks Container Edition Buildpack provides the runtime component for developers to deploy BusinessWorks (BW) applications to Pivotal Application Service (formerly Elastic Runtime). 
 
 ## <a id='overview'></a>Overview
@@ -64,6 +69,10 @@ The following table provides version and version-support information about TIBCO
     <tr>
         <td>Compatible Elastic Runtime version(s)</td>
         <td>v2.1.x, v2.2.x, v2.3.x, and v2.4.x</td>
+    </tr>
+    <tr>
+       <td>BOSH stemcell version</td>
+       <td>Ubuntu Trusty</td>
     </tr>
     <tr>
         <td>IaaS support</td>
