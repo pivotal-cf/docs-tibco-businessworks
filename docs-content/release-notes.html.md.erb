@@ -5,70 +5,21 @@ owner: Partners
 
 These are release notes for TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry.
 
-##<a id="ver"></a> v2.4.3
+##<a id="ver"></a> v2.4.4
 
-**Release Date:** March 19, 2019
+**Release Date:** June 24, 2019
 
 Features included in this release:
 
-*Certification for Pivotal Cloud Foundry 2.4.x
+*This release extends out-of-the-box unit testing capability to add Mock Support. Moving ahead, you can select option Add Mock Output for activities and configure absolute path of a file to store mock outputs using Output File Path option.
 *Open Tracing now supports the following:
-	-Spawned sub-process as a followed span of a main process.
-	-REST Service Bindings
-*Support is added for replace() XPath function.
-*The Start Job on Input Exception check box is added on the REST Service Binding.
-*You can now create packages with same name in different shared modules.
-*A new Activity Timeout (seconds) field is added on the Advanced tab of the Invoke REST API activity.
+	-Custom tags are now supported.
+    -SOAP Service and Reference bindings are now supported in OpenTracing.
+    -Process name for Starter activities are now displayed.
+    -Error tag is set to True in the spans, if the respective activity execution fails.
+*This release provides ability to resolve value of a module property by combining values of two or more module properties.
+*Application Monitoring UI now includes a new option product_version. This gives the ability to view the product version on the UI as well as under monitoring logs.
+*When the hystrix circuit breaker is open, specific error message is being thrown instead of generic hystrix exception.
+*Adds the ability to make the XSLT validation optional.
 
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.3/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
-
-##<a id="ver"></a> v2.4.0
-
-**Release Date:** February 8, 2019
-
-Features included in this release:
-
-* Support for OpenTracing
-* Advanced process monitoring
-* JSON to JSON transformation using JOLT specification
-* Cloud Foundry Application Manifest Editor plug-in
-* APIs to customize integration with external configuration management tool of your choice
-* Support for custom JMS driver
-* Ability to browse services registered in Consul and Eureka in the HTTP Client
-Shared Resource for service discovery
-* Ability to export tokenized BusinessWorks Application properties in a properties
-file which can be used for configuring Spring Cloud Config Server for Configuration Management
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.0/doc/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
-
-##<a id="ver"></a> v2.3.4
-
-**Release Date:** June 11, 2018
-
-Features included in this release:
-
-* Support for PCF 2.x
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.3.4/doc/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
-
-##<a id="ver"></a> v2.3.3
-
-**Release Date:** March 15, 2018
-
-Features included in this release:
-
-* Support for TCP Palette.
-* This release certified the use of HashiCorp Vault as the backend for Spring Cloud Config with TIBCO BusinessWorks applications.
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.3.3/doc/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
-
-##<a id="ver"></a> v2.3.2
-
-**Release Date:** February 6, 2018
-
-Features included in this release:
-
-* File palette support for Cloud Foundry deployment.
-* Support for Pivotal Cloud Foundry 1.12.x
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.3.2/doc/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
+For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.4/relnotes/GUID-E78E55FD-2394-4078-A1EA-854A631F13A9-homepage.html).
