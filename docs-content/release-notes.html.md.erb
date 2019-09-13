@@ -5,19 +5,36 @@ owner: Partners
 
 These are release notes for TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry.
 
+##<a id="ver"></a> v2.4.5
+
+**Release Date:** September 20, 2019
+
+Features included in this release:
+-Support for PCF 2.6
+-This release adds out-of-the-box capability to use AWS Systems Manager Parameter store for Configuration and Secrets management. For more information, see Using Configurations from Configuration Management Services for AWS.
+-This release adds the capability in TIBCO Business Studio for BusinessWorks testing applications which are using Consul for configuration management service. For more information, see Application Development for TIBCO Business Studio™ for BusinessWorks™ in TIBCO BusinessWorks™ Container Edition Application Development guide.
+-This release certifies compatibility with Amazon Aurora Databases for JDBC palette.
+
+For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.5/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
+
 ##<a id="ver"></a> v2.4.4
 
 **Release Date:** June 20, 2019
 
 Features included in this release:
--Spawned sub-process as a followed span of a main process.
-	-REST Service Bindings
-*Support is added for replace() XPath function.
-*The Start Job on Input Exception check box is added on the REST Service Binding.
-*You can now create packages with same name in different shared modules.
-*A new Activity Timeout (seconds) field is added on the Advanced tab of the Invoke REST API activity.
+-This release extends out-of-the-box unit testing capability to add Mock Support. Moving ahead, you can select option Add Mock Output for activities and configure absolute path of a file to store mock outputs using Output File Path option. Refer to following article to check the list of supported palettes: https://docs.tibco.com/pub/bwce/2.4.4/relnotes/GUID-11F05D17-90DE-478D-BE51-87927EAAF2DC.html
+-Enhancements in OpenTracing:
+        -Custom tags are now supported.
+        -SOAP Service and Reference bindings are now supported in OpenTracing.
+        -Process name for Starter activities are now displayed.
+        -Error tag is set to True in the spans, if the respective activity execution fails.
+-New set of of Docker scripts in addition to existing scripts which gives you an option to reduce container startup time.
+-Application Monitoring UI now includes a new option product_version. This gives the ability to view the product version on the UI as well as under monitoring logs.
+-This release provides ability to resolve value of a module property by combining values of two or more module properties.
+-When the hystrix circuit breaker is open, specific error message is being thrown instead of generic hystrix exception.
+-This release adds the ability to make the XSLT validation optional.
 
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.3/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
+For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.4/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
 
 ##<a id="ver"></a> v2.4.0
 
@@ -69,16 +86,3 @@ Features included in this release:
 * Support for Pivotal Cloud Foundry 1.12.x
 
 For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.3.2/doc/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
-
-*This release extends out-of-the-box unit testing capability to add Mock Support. Moving ahead, you can select option Add Mock Output for activities and configure absolute path of a file to store mock outputs using Output File Path option.
-*Open Tracing now supports the following:
-	-Custom tags are now supported.
-	-SOAP Service and Reference bindings are now supported in OpenTracing.
-	-Process name for Starter activities are now displayed.
-	-Error tag is set to True in the spans, if the respective activity execution fails.
-*This release provides ability to resolve value of a module property by combining values of two or more module properties.
-*Application Monitoring UI now includes a new option product_version. This gives the ability to view the product version on the UI as well as under monitoring logs.
-*When the hystrix circuit breaker is open, specific error message is being thrown instead of generic hystrix exception.
-*This release adds the ability to make the XSLT validation optional.
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.4/relnotes/index.html).
