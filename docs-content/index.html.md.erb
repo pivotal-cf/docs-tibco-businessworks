@@ -1,16 +1,16 @@
 ---
-title: TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry
+title: TIBCO BusinessWorks Container Edition Buildpack for Pivotal Platform
 owner: Partners
 ---
 
 
-This documentation describes the TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry (PCF). The TIBCO BusinessWorks Container Edition Buildpack provides the runtime component for developers to deploy BusinessWorks (BW) applications to Pivotal Application Service (formerly Elastic Runtime).
+This documentation describes the TIBCO BusinessWorks Container Edition Buildpack for Pivotal Platform. The TIBCO BusinessWorks Container Edition Buildpack provides the runtime component for developers to deploy BusinessWorks (BW) applications to Pivotal Application Service (formerly Elastic Runtime).
 
 ## <a id='overview'></a>Overview
 
 TIBCO BusinessWorks Container Edition enables you to quickly and easily connect APIs, Microservices, and legacy backend systems. With an easy-to-use drag-and-drop graphical development environment, graphical data mapper, and vast library of connectors, you can quickly and easily create cloud-native integration applications and run them natively on Pivotal Application Service (formerly Elastic Runtime).
 
-When you push a BW application to a PCF deployment, the TIBCO BusinessWorks Container Edition Buildpack detects the BW application, produces a tarball called a "droplet" that contains a lightweight version of the BW runtime along with the application files, and configures the runtime to run the application when the container starts. For more information about how PCF stages applications, see the [How Applications Are Staged](http://docs.pivotal.io/pivotalcf/concepts/how-applications-are-staged.html#stage-buildpack) topic.
+When you push a BW application to a Pivotal Platform deployment, the TIBCO BusinessWorks Container Edition Buildpack detects the BW application, produces a tarball called a "droplet" that contains a lightweight version of the BW runtime along with the application files, and configures the runtime to run the application when the container starts. For more information about how Pivotal Platform stages applications, see the [How Applications Are Staged](http://docs.pivotal.io/pivotalcf/concepts/how-applications-are-staged.html#stage-buildpack) topic.
 
 To build applications for the runtime provided by the TIBCO BusinessWorks Container Edition Buildpack, you must use the TIBCO Business Studio for BusinessWorks development environment. See the [Requirements](index.html#reqs) section below for more information.
 
@@ -21,7 +21,7 @@ The TIBCO BusinessWorks Container Edition runtime simplifies creation of cloud-n
 * **Service-oriented**: provides real-time integration for endpoints such as web services and APIs, and uses services and messages for data abstraction
 * **Resource-oriented**: provides real-time integration for endpoints such as mobile or web applications and APIs, and uses resources for data abstraction
 
-TIBCO BusinessWorks Container Edition runtime natively integrates with Spring Cloud Services for PCF to support Service Registry/Discovery, Configuration Management and Circuit Breaker pattern.
+TIBCO BusinessWorks Container Edition runtime natively integrates with Spring Cloud Services for Pivotal Platform to support Service Registry/Discovery, Configuration Management and Circuit Breaker pattern.
 
 For more information about the TIBCO BusinessWorks Container Edition runtime, see the TIBCO [documentation](https://docs.tibco.com/products/tibco-businessworks-container-edition). For specific topics in the TIBCO documentation, refer to the following sections:
 
@@ -40,7 +40,7 @@ For more information about the TIBCO BusinessWorks Container Edition runtime, se
 
 ## <a id="snapshot"></a>Product Snapshot
 
-The following table provides version and version-support information about TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry:
+The following table provides version and version-support information about TIBCO BusinessWorks Container Edition Buildpack for Pivotal Platform:
 
 <table class="nice">
     <th>Element</th>
@@ -51,19 +51,21 @@ The following table provides version and version-support information about TIBCO
     </tr>
     <tr>
         <td>Release date</td>
+
         <td>January 8, 2020</td>
     </tr>
     <tr>
         <td>Software component version</td>
         <td>TIBCO BusinessWorks Container Edition Buildpack for Pivotal Cloud Foundry 2.5.0</td>
+
     </tr>
     <tr>
         <td>Compatible Ops Manager version(s)</td>
-        <td>2.1, 2.2, 2.3, 2.4, 2.5 and 2.6</td>
+        <td>v2.4, v2.5 and v2.6</td>
     </tr>
     <tr>
         <td>Compatible Pivotal Application Service version(s)</td>
-        <td>2.1, 2.2, 2.3, 2.4, 2.5 and 2.6</td>
+        <td>v2.4, v2.5 and v2.6</td>
     </tr>
     <tr>
        <td>BOSH stemcell version</td>
@@ -74,11 +76,6 @@ The following table provides version and version-support information about TIBCO
         <td>AWS, Azure, OpenStack, GCP, and vSphere</td>
     </tr>
 </table>
-<p class="note warning"><strong> WARNING:</strong>
-TIBCO BusinessWorks Container Edition Buildpack for PCF v2.4.0
-and earlier require a Ubuntu Trusty stemcell.
-The end-of-life date for Ubuntu Trusty is April 2019.
-If a security vulnerability is found on this stemcell after April, it will not be fixed.</p>
 
 
 ## <a id="reqs"></a>Requirements
@@ -92,4 +89,4 @@ For the release notes for the TIBCO BusinessWorks Container Edition Buildpack, s
 
 ## <a id="feedback"></a>Feedback
 
-Please provide any bugs, feature requests, or questions to the [Pivotal Cloud Foundry Feedback](mailto:pivotal-cf-feedback@pivotal.io) list.
+Please provide any bugs, feature requests, or questions to the [Pivotal Platform Feedback](mailto:pivotal-cf-feedback@pivotal.io) list.
