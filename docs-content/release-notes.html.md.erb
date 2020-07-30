@@ -5,12 +5,25 @@ owner: Partners
 
 These are release notes for TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu.
 
+##<a id="ver"></a> v2.5.3
+
+**Release Date:** July 29, 2020
+
+Features included in this release:
+-This release adds out-of-the-box support for AWS Secret Manager for Credential Management Service to fetch passwords dynamically to TIBCO BusinessWorks Container Edition.
+-This release adds out-of-the-box support in TIBCO BusinessWorks Container Edition for Conjur for Credential Management Service. 
+-This release enhances the ability to select test cases while running test goals for unit testing. You can now customize the test suite to run specific test cases.
+-This release adds support for IPv6 format addresses for JMS, JDBC, HTTP palettes and REST and SOAP bindings.
+-This release adds support for Role Based Authorization. Earlier, only LDAP based or XML based authentication support was present in the Basic Authentication policy resource. Now, authorization support is also added in conjunction with authentication.
+
+For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.5.3/relnotes/GUID-E78E55FD-2394-4078-A1EA-854A631F13A9-homepage.html).
+
 ##<a id="ver"></a> v2.5.2
 
 **Release Date:** April 28, 2020
 
 Features included in this release:
--Support for Pivotal Application Services(PAS) 2.7 and 2.8
+-Support for VMware Tanzu 2.7 and 2.8
 -This release adds out-of-the-box support in TIBCO Business Studio™ for BusinessWorks™ for CyberArk Password Vault integration. For more information, see in theTIBCO BusinessWorks™ Container Edition Application Development guide.
 -The <ActivityName> and </ActivityName> tags are now added to the output of the Job Data when you select the Copy Variables option in the Job Data view.
 -This release adds capability to authenticate requests made to Consul Server using the X_CONSUL_TOKEN as an environment variable.
