@@ -5,6 +5,25 @@ owner: Partners
 
 These are release notes for TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu.
 
+##<a id="ver"></a> v2.7.0
+
+**Release Date:** December 24, 2021
+
+Features included in this release:
+-Support added for VMware Tanzu 2.12
+-Support is added to remember mappings made in a smart mapping session
+-Support is added for Java 11
+-Support added for OpenTelemetry for Tracing
+-Support of Binary Response Format for OAS 3.0 REST services is provided
+-The View Documentation icon is added for plug-ins in Plug-in Manager
+-REST service can return HTML content to the browser
+-Support is added for Eclipse 4.19 platform for TIBCO Business Studio for BusinessWorks
+-Support is added for TLS 1.3 version
+-Smart Engine API
+-Support is added for setting the request URL dynamically on REST reference binding
+
+For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.7.0/relnotes/Default.htm).
+
 ##<a id="ver"></a> v2.6.2
 
 **Release Date:** July 7, 2021
@@ -75,72 +94,3 @@ Features included in this release:
 -Process Starter activities are now supported in Shared Modules.
 
 For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.5.0/relnotes/GUID-E78E55FD-2394-4078-A1EA-854A631F13A9-homepage.html).
-
-##<a id="ver"></a> v2.4.5
-
-**Release Date:** September 16, 2019
-
-Features included in this release:
-
-* Support for VMware Tanzu 2.6
-* This release adds out-of-the-box capability to use AWS Systems Manager Parameter store for Configuration and Secrets management. For more information, see [Using Configurations from Configuration Management Services for AWS.](https://docs.tibco.com/emp/bwce/2.4.5/doc/html/GUID-1D354A73-AB8E-463D-8DD4-A3A03DBA2E32.html)
-* This release adds the capability in TIBCO Business Studio for BusinessWorks testing applications which are using Consul for configuration management service. For more information, see [Application Development for TIBCO Business Studio™ for BusinessWorks™](https://docs.tibco.com/emp/bwce/2.4.5/doc/html/GUID-463753BB-1DEE-417D-B01E-A62E81D437E8.html) in TIBCO BusinessWorks™ Container Edition Application Development guide.
-* This release certifies compatibility with Amazon Aurora Databases for JDBC palette.
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.5/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
-
-##<a id="ver"></a> v2.4.4
-
-**Release Date:** June 20, 2019
-
-Features included in this release:
-
-- This release extends out-of-the-box unit testing capability to add Mock Support. Moving ahead, you can select option Add Mock Output for activities and configure absolute path of a file to store mock outputs using Output File Path option. Check the list of [supported palettes] (https://docs.tibco.com/pub/bwce/2.4.4/relnotes/GUID-11F05D17-90DE-478D-BE51-87927EAAF2DC.html)
-- Enhancements in OpenTracing:
-        - Custom tags are now supported.
-        - SOAP Service and Reference bindings are now supported in OpenTracing.
-        - Process name for Starter activities are now displayed.
-        - Error tag is set to True in the spans, if the respective activity execution fails.
-- New set of of Docker scripts in addition to existing scripts which gives you an option to reduce container startup time.
-- Application Monitoring UI now includes a new option product_version. This gives the ability to view the product version on the UI as well as under monitoring logs.
-- This release provides ability to resolve value of a module property by combining values of two or more module properties.
-- When the hystrix circuit breaker is open, specific error message is being thrown instead of generic hystrix exception.
-- This release adds the ability to make the XSLT validation optional.
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.4/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
-
-##<a id="ver"></a> v2.4.3
-
-**Release Date:** March 8,2019
-
-Features included in this release:
-
-- Certification for VMware Tanzu 2.4.x
-- Open Tracing now supports the following:
-	- Spawned sub-process as a followed span of a main process.
-	- REST Service Bindings
-- Support is added for replace() XPath function.
-- The Start Job on Input Exception check box is added on the REST Service Binding.
-- You can now create packages with same name in different shared modules.
-- A new Activity Timeout (seconds) field is added on the Advanced tab of the Invoke REST API activity.
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.3/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
-
-##<a id="ver"></a> v2.4.0
-
-**Release Date:** February 8, 2019
-
-Features included in this release:
-
-* Support for OpenTracing
-* Advanced process monitoring
-* JSON to JSON transformation using JOLT specification
-* Cloud Foundry Application Manifest Editor plug-in
-* APIs to customize integration with external configuration management tool of your choice
-* Support for custom JMS driver
-* Ability to browse services registered in Consul and Eureka in the HTTP Client
-Shared Resource for service discovery
-* Ability to export tokenized BusinessWorks Application properties in a properties
-file which can be used for configuring Spring Cloud Config Server for Configuration Management
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.4.0/doc/relnotes/GUID-B44D8CF5-6927-404C-BED9-ED7E7D2AE294-homepage.html).
