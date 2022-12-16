@@ -5,6 +5,27 @@ owner: Partners
 
 These are release notes for TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu.
 
+##<a id="ver"></a> v2.8.0
+
+**Release Date:** December 19, 2022
+
+Features included in this release:
+- Support added for VMware Tanzu 2.13
+- OAS 3.0 Enhancements:
+  1. Support for Multiple Response feature
+  2. oneOf/anyOf constructs support
+  3. Support for Inline Schema at request and response
+- Support is added for Hot Update for JDBC Shared Resource.
+- OAuth 2.0 Authentication in ReceiveMail activity
+- OAuth 2.0 Authentication is supported for Receive Mail Activity IMAP protocol in the Mail palette.
+- Support for Multiple Profile Deployment via Maven
+- Smart Mapper Enhancements:
+  1. Import/export recommendation information
+  2. Learn Existing Links feature
+  3. Test Connection button for DB connection
+
+For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.8.0/relnotes/Default.htm).
+
 ##<a id="ver"></a> v2.7.0
 
 **Release Date:** December 24, 2021
@@ -82,15 +103,3 @@ Features included in this release:
 -This release added ability to allow Mocking exception for activities.
 
 For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.5.2/relnotes/GUID-E78E55FD-2394-4078-A1EA-854A631F13A9-homepage.html).
-
-##<a id="ver"></a> v2.5.0
-
-**Release Date:** January 8, 2020
-
-Features included in this release:
--This release adds ability to dynamically update application module properties without restarting application. For more information on Hot Update, see "Hot Update for application module properties" in TIBCO BusinessWorks™ Container Edition Application Development guide.
--This release adds ability to debug a remotely running application using the Debug mode in TIBCO Business Studio™ for BusinessWorks™
--Support for Memory Saving Mode: Memory saving mode allows memory used by an activity output variable to be released when the value of the variable is no longer needed. Memory saving can be enabled at design-time and run-time both. For more information, please refer: https://docs.tibco.com/pub/bwce/2.5.0/doc/html/GUID-027DA78C-9AA1-43F2-B08C-C5B2619A4D4C.html
--Process Starter activities are now supported in Shared Modules.
-
-For the detailed release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.5.0/relnotes/GUID-E78E55FD-2394-4078-A1EA-854A631F13A9-homepage.html).
