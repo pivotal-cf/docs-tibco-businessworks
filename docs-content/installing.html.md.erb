@@ -5,7 +5,7 @@ owner: Partners
 
 This topic describes how to install, configure, and upgrade the TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu tile.
 
-##<a id='install'></a> Install and Configure the TIBCO BusinessWorks Container Edition Buildpack 
+## <a id='install'></a> Install and Configure the TIBCO BusinessWorks Container Edition Buildpack
 
 1. Download the product file from [Pivotal Network](https://network.pivotal.io).
 
@@ -15,17 +15,19 @@ This topic describes how to install, configure, and upgrade the TIBCO BusinessWo
 
 1. Click the newly added **TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu** tile to configure it.
 
-1. Click **Buildpack Settings** and enter the position for the buildpack installed by the tile. This sets the order of the buildpack relative to the other buildpacks in the detection priority list. For more information, see the [Buildpack Detection](https://docs.pivotal.io/pivotalcf/pivotalcf/buildpacks/detection.html) topic. 
-    <%= image_tag('buildpack-settings.png') %>
+1. Click **Buildpack Settings** and enter the position for the buildpack installed by the tile; this sets the order of the buildpack relative to the other buildpacks in the detection priority list. For more information, see [Buildpack Detection](https://docs.pivotal.io/pivotalcf/pivotalcf/buildpacks/detection.html).
+
+    ![alt-text=""](images/buildpack-settings.png)
 
 1. Click **Stemcell**. Download the BOSH stemcell version appropriate for your IaaS from [Pivotal Network](https://network.pivotal.io/products/stemcells) and click **Import Stemcell** to import it.
-    <%= image_tag('stemcell.png') %>
+
+    ![alt-text=""](images/stemcell.png)
 
 1. Click **Save**.
 
 1. Return to the Ops Manager Installation Dashboard and click **Apply Changes** to install the tile.
 
-##<a id='upgrade'></a> Upgrade the TIBCO BusinessWorks Container Edition Buildpack
+## <a id='upgrade'></a> Upgrade the TIBCO BusinessWorks Container Edition Buildpack
 
 1. Download the latest version of the product from [Pivotal Network](https://network.pivotal.io).
 
@@ -35,7 +37,7 @@ This topic describes how to install, configure, and upgrade the TIBCO BusinessWo
 
 1. Click the newly added **TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu** tile to configure it.
 
-1. Follow the configuration steps in the [section](#install) above. Download and import the new stemcell associated with the update, if required.
+1. Follow the configuration steps in this [section](#install). Download and import the new stemcell associated with the update, if required.
 
 1. Click **Save**.
 

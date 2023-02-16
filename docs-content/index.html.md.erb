@@ -4,15 +4,15 @@ owner: Partners
 ---
 
 
-This documentation describes the TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu. The TIBCO BusinessWorks Container Edition Buildpack provides the runtime component for developers to deploy BusinessWorks (BW) applications to VMware Tanzu Application Service for VMs (formerly Elastic Runtime).
+This documentation describes the TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu. The TIBCO BusinessWorks Container Edition Buildpack provides the runtime component for developers to deploy BusinessWorks applications to VMware Tanzu Application Service for VMs (formerly Elastic Runtime).
 
 ## <a id='overview'></a>Overview
 
-TIBCO BusinessWorks Container Edition enables you to quickly and easily connect APIs, Microservices, and legacy backend systems. With an easy-to-use drag-and-drop graphical development environment, graphical data mapper, and vast library of connectors, you can quickly and easily create cloud-native integration applications and run them natively on VMware Tanzu Application Service for VMs (formerly Elastic Runtime).
+The TIBCO BusinessWorks Container Edition enables you to quickly and easily connect APIs, Microservices, and legacy backend systems. With an easy-to-use drag-and-drop graphical development environment, graphical data mapper, and vast library of connectors, you can create cloud-native integration applications and run them natively on VMware Tanzu Application Service for VMs (formerly Elastic Runtime).
 
-When you push a BW application to a VMware Tanzu deployment, the TIBCO BusinessWorks Container Edition Buildpack detects the BW application, produces a tarball called a "droplet" that contains a lightweight version of the BW runtime along with the application files, and configures the runtime to run the application when the container starts. For more information about how VMware Tanzu stages applications, see the [How Applications Are Staged](http://docs.pivotal.io/pivotalcf/concepts/how-applications-are-staged.html#stage-buildpack) topic.
+When you push a BusinessWorks application to a VMware Tanzu deployment, the TIBCO BusinessWorks Container Edition Buildpack detects the BusinessWorks application, produces a tarball called a "droplet" that contains a lightweight version of the BW runtime along with the application files, and configures the runtime to run the application when the container starts.
 
-To build applications for the runtime provided by the TIBCO BusinessWorks Container Edition Buildpack, you must use the TIBCO Business Studio for BusinessWorks development environment. See the [Requirements](index.html#reqs) section below for more information.
+To build applications for the runtime provided by the TIBCO BusinessWorks Container Edition Buildpack, use the TIBCO Business Studio for BusinessWorks development environment. See [Requirements](index.html#reqs) for more information.
 
 The TIBCO BusinessWorks Container Edition runtime simplifies creation of cloud-native integration applications using any of the following integration styles:
 
@@ -21,9 +21,11 @@ The TIBCO BusinessWorks Container Edition runtime simplifies creation of cloud-n
 * **Service-oriented**: provides real-time integration for endpoints such as web services and APIs, and uses services and messages for data abstraction
 * **Resource-oriented**: provides real-time integration for endpoints such as mobile or web applications and APIs, and uses resources for data abstraction
 
-TIBCO BusinessWorks Container Edition runtime natively integrates with Spring Cloud Services for VMware Tanzu to support Service Registry/Discovery, Configuration Management and Circuit Breaker pattern.
+The TIBCO BusinessWorks Container Edition runtime natively integrates with Spring Cloud Services for VMware Tanzu to support Service Registry/Discovery, Configuration Management and Circuit Breaker pattern.
 
-For more information about the TIBCO BusinessWorks Container Edition runtime, see the TIBCO [documentation](https://docs.tibco.com/products/tibco-businessworks-container-edition). For specific topics in the TIBCO documentation, refer to the following sections:
+For more information about the TIBCO BusinessWorks Container Edition runtime, see the TIBCO [documentation](https://docs.tibco.com/products/tibco-businessworks-container-edition).
+
+For specific topics in the TIBCO documentation, go to the following sections:
 
 * [Product Readme](https://docs.tibco.com/pub/bwce/2.8.0/TIB_bwce_2.8.0_readme.txt?id=0)
 * [Concepts](https://docs.tibco.com/pub/bwce/2.8.0/doc/html/concepts/studio-concepts-overview.htm)
@@ -35,8 +37,8 @@ For more information about the TIBCO BusinessWorks Container Edition runtime, se
 * [Samples](https://docs.tibco.com/pub/bwce/2.8.0/doc/html/samples-guide/studio-samples-overview.htm)
 * [REST Implementation](https://docs.tibco.com/pub/bwce/2.8.0/doc/html/REST-reference/studio-rest-ref-overview.htm)
 * [Migration (from TIBCO ActiveMatrix BusinessWorks 5.x)](https://docs.tibco.com/pub/bwce/2.8.0/doc/html/migration/bwce-migration-overview.htm)
-* [Application Monitoring and Troubleshooting] (https://docs.tibco.com/pub/bwce/2.8.0/doc/html/bwce-app-monitoring/bwce-app-monitoring-overview.htm)
-* [Performance Benchmarking and Tuning] (https://docs.tibco.com/pub/bwce/2.8.0/doc/html/perf-bench-tuning/bwce-perf-bench-overview.htm)
+* [Application Monitoring and Troubleshooting](https://docs.tibco.com/pub/bwce/2.8.0/doc/html/bwce-app-monitoring/bwce-app-monitoring-overview.htm)
+* [Performance Benchmarking and Tuning](https://docs.tibco.com/pub/bwce/2.8.0/doc/html/perf-bench-tuning/bwce-perf-bench-overview.htm)
 
 ## <a id="snapshot"></a>Product Snapshot
 
@@ -56,7 +58,6 @@ The following table provides version and version-support information about TIBCO
     <tr>
         <td>Software component version</td>
         <td>TIBCO BusinessWorks Container Edition Buildpack for VMware Tanzu 2.8.0</td>
-
     </tr>
     <tr>
         <td>Compatible Ops Manager version(s)</td>
@@ -80,11 +81,11 @@ The following table provides version and version-support information about TIBCO
 ## <a id="reqs"></a>Requirements
 
 
-To use the runtime provided by the TIBCO BusinessWorks Container Edition Buildpack, you must [download](https://www.tibco.com/products/tibco-businessworks) and install the TIBCO Business Studio for BusinessWorks development environment.   
+To use the runtime provided by the TIBCO BusinessWorks Container Edition Buildpack, you must [download](https://www.tibco.com/products/tibco-businessworks) and install the TIBCO Business Studio for BusinessWorks development environment.
 
 ## <a id="relnotes"></a>Release Notes
 
-For the release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.8.0/relnotes/Default.htm)
+For the release notes for the TIBCO BusinessWorks Container Edition Buildpack, see the TIBCO [documentation](https://docs.tibco.com/pub/bwce/2.8.0/relnotes/Default.htm).
 
 ## <a id="feedback"></a>Feedback
 
